@@ -1,8 +1,7 @@
-/* tictactoe.css */
 body {
   margin: 0;
   padding: 0;
-  background-color: #0b1d3a;
+  background-color: #001f3f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,40 +24,42 @@ h1 {
 .cell {
   width: 100px;
   height: 100px;
-  background-color: #132c4c;
+  background-color: #003366;
+  border-radius: 10px;
+  font-size: 40px;
   color: white;
-  font-size: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: none;
   transition: all 0.3s ease;
 }
 
 .cell.X {
   color: #00bfff;
-  text-shadow: 0 0 10px #00bfff;
+  text-shadow: 0 0 12px #00bfff;
 }
 
 .cell.O {
-  color: #ff4c4c;
-  text-shadow: 0 0 10px #ff4c4c;
+  color: #ff4d4d;
+  text-shadow: 0 0 12px #ff4d4d;
 }
 
 .reset-button {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 10px 20px;
-  background-color: #1c3b68;
-  border: none;
-  color: white;
   font-size: 16px;
+  border: none;
+  background-color: #004080;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00bfff;
   cursor: pointer;
-  box-shadow: 0 0 8px #00bfff;
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .reset-button:hover {
-  box-shadow: 0 0 15px #00bfff;
+  background-color: #0055aa;
+  box-shadow: 0 0 18px #00bfff;
   transform: scale(1.05);
 }
