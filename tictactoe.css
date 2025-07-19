@@ -1,40 +1,64 @@
+/* tictactoe.css */
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background-color: #0b1d3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-#game {
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  grid-gap: 10px;
-  margin: 20px auto;
-  width: 320px;
+  gap: 10px;
 }
 
 .cell {
   width: 100px;
   height: 100px;
-  font-size: 48px;
-  background-color: white;
+  background-color: #132c4c;
+  color: white;
+  font-size: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 2px solid #333;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.cell:hover {
-  background-color: #ddd;
+.cell.X {
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff;
 }
 
-button {
+.cell.O {
+  color: #ff4c4c;
+  text-shadow: 0 0 10px #ff4c4c;
+}
+
+.reset-button {
+  margin-top: 20px;
   padding: 10px 20px;
+  background-color: #1c3b68;
+  border: none;
+  color: white;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 0 8px #00bfff;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-h1 {
-  color: #333;
+.reset-button:hover {
+  box-shadow: 0 0 15px #00bfff;
+  transform: scale(1.05);
 }
